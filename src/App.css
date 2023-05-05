@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 20px; */
+}
+
+body {
+  /* height:100vh; */
+  /* width: 100%; */
+}
+.container h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 40px;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  /* margin-right: 1rem; */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-body {
+  margin-top: 10px;
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.maindiv {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.rightdiv {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rightdiv h1 {
+  font-size: 4rem;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.rightdiv h1 span {
+  color: rgb(94, 94, 221);
+}
+.rightdiv p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.nextdiv {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.nextdiv h3 {
+  padding: 10px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #eee3e3;
+  border-radius: 5px;
+}
+
+.selloption {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+
+.cardlogo{
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.cardlogo img{
+height: 80px;
+width: 80px;
+border-radius: 50%;
+padding: 10px;
+}
+
+.cardlogo h3{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.cardlogo p{
+  margin-top: 20px;
+  font-weight: 700;
+
+}
+
+.cardlogo button{
+  margin-top: 20px;
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: auto auto ;
+  padding: 10px;
+
+}
+
+.contactright{
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.contactright img{
+  width:700 ;
+  height:600;
+  
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+label{
+  font-size: 16px;
+  font-weight: 600;
+
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* box-sizing: border-box; */
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contactheading{
+  font-size: 1.3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #4CAF50;
+}
+
+
+.servisepage{
+display: grid;
+gap: 40px 40px;
+grid-template-columns: auto auto auto;
+border: 2px solid black;
+padding: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .maindiv {
+    display: block;
+    /* grid-template-columns: auto auto; */
+    padding: 10px;
+  }
+.maindiv img{
+  height: 400px;
+  width: 400px;
+}
+.selloption {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* grid-template-columns: auto auto auto auto; */
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.servisepage{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+}
